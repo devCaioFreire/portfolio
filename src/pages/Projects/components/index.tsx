@@ -1,14 +1,20 @@
-import { Project, ProjectInfo, ProjectsCards } from "./style";
+import {
+  Project,
+  ProjectInfo,
+  ProjectSmallApp,
+  ProjectsCards,
+} from "./style";
 
 interface CardProps {
   techs: string;
   title: string;
   description: string;
-  image: string;
+  image?: string;
   link: string;
+  linkName?: string;
 }
 
-export function ProjectCard({
+export function ProjectAppCard({
   techs,
   title,
   description,
@@ -33,6 +39,27 @@ export function ProjectCard({
           </div>
         </ProjectInfo>
       </Project>
+    </ProjectsCards>
+  );
+}
+
+export function ProjectCard({
+  techs,
+  title,
+  description,
+  link,
+  linkName,
+}: CardProps) {
+  return (
+    <ProjectsCards>
+      <ProjectSmallApp>
+        <span>{techs}</span>
+        <div>
+          <h2>{title}</h2>
+          <p>{description}</p>
+          <a href={link}>{linkName}</a>
+        </div>
+      </ProjectSmallApp>
     </ProjectsCards>
   );
 }

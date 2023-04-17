@@ -45,9 +45,60 @@ export const ProjectInfo = styled.div`
     color: ${(props) => props.theme.gray};
     padding: 0.5rem 1rem;
     transition: all 0.2s;
+    border-radius: 4px;
 
     &:hover {
       color: ${(props) => props.theme.white};
+    }
+  }
+`;
+
+export const ProjectSmallApp = styled.div`
+  display: flex;
+  flex-direction: column;
+  border: 2px solid ${(props) => props.theme.gray};
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 20rem;
+  transition: all 0.4s;
+
+  span {
+    border-bottom: 2px solid ${(props) => props.theme.gray};
+    padding: 1rem;
+    color: ${(props) => props.theme.gray};
+    transition: all 0.4s;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+
+    h2 {
+      color: ${(props) => props.theme.white};
+      font-weight: 500;
+    }
+
+    a {
+      width: fit-content;
+      border: 1px solid ${(props) => props.theme.purple};
+      color: ${(props) => props.theme.white};
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s;
+
+      &:hover {
+        background: ${(props) => props.theme.purple};
+      }
+    }
+  }
+
+  &:hover {
+    border: 2px solid ${(props) => props.theme.purple};
+
+    span {
+      border-bottom: 2px solid ${(props) => props.theme.purple};
     }
   }
 `;

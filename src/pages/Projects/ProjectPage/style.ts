@@ -13,7 +13,7 @@ export const HeaderMain = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 3rem;
+  margin: 4rem 0;
 
   span {
     color: ${(props) => props.theme.purple};
@@ -21,15 +21,19 @@ export const HeaderMain = styled.div`
 `;
 
 export const ProjectHeader = styled.div`
-  margin-top: 4rem;
-
   span {
     color: ${(props) => props.theme.purple};
   }
 `;
 
 export const ProjectsCardsContent = styled.section`
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+`;
+
+export const ProjectsSmallCardsContent = styled.section`
+  padding-bottom: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 `;

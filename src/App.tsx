@@ -21,8 +21,8 @@ export function App() {
       <Projects />
       <Skills />
       <About />
-      <Contact />
-      <Footer /> */}
+      <Contact />*/}
+      <Footer />
       <GlobalStyles />
     </ThemeProvider>
   );
