@@ -1,4 +1,4 @@
-<div style="display: flex; align-items: center; justify-content:center; gap: 5px; ">
+<div style="display: flex; justify-content:center; gap: 5px; ">
   <img src="./src/assets/frPurple.svg" />
  <h1 style="padding-top: 15px;">
 Portfolio | Caio Freire</h1>
@@ -31,7 +31,7 @@ This is my personal portfolio where I share some of the projects I have worked o
 
 ```bash
 # Clone this repository
-$ git clone linkrepo
+$ git clone https://github.com/devCaioFreire/portfolio.git
 
 # Access the repository folder in your terminal
 $ cd portfolio
