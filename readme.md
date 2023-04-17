@@ -7,7 +7,7 @@ Portfolio | Caio Freire</h1>
 <br>
 
 <h2>
-<a href='#'>Live Demo: [link to hosted environment]</a>
+<a href='https://caiofreire.vercel.app/'>Live Demo</a>
 </h2>
 
 <br>
