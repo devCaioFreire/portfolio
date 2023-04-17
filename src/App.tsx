@@ -9,18 +9,20 @@ import { Skills } from "./pages/Skills";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Footer } from "./components/Footer";
+import { ProjectPage } from "./pages/Projects/ProjectPage";
 
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <Header />
-      <Home />
+      <ProjectPage />
+      {/* <Home />
       <QuoteSession />
       <Projects />
       <Skills />
       <About />
       <Contact />
-      <Footer />
+      <Footer /> */}
       <GlobalStyles />
     </ThemeProvider>
   );

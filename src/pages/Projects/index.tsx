@@ -56,8 +56,12 @@ export function Projects() {
             <h1>Nome do App</h1>
             <p>Descrição da aplicação desenvolvida</p>
             <div>
-              <a href="#">Produção {"<~>"}</a>
-              <a href="#">Repositório {">="}</a>
+              <a href="#" >
+                Produção {"<~>"}
+              </a>
+              <a href="#" target="_blank">
+                Repositório {">="}
+              </a>
             </div>
           </ProjectInfo>
         </Project>
