@@ -9,7 +9,7 @@ import { HardSkillsComponent } from "./components";
 export function SkillSession() {
   return (
     <SkillsContainer>
-      <div>
+      <div style={{ margin: "0 1rem" }}>
         <h1>
           <span>#</span>skills
         </h1>

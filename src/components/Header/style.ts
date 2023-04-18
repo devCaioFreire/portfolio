@@ -31,6 +31,15 @@ export const AsideContainer = styled.aside`
       color: ${({ theme }) => theme.white};
     }
   }
+
+  @media screen and (max-width: 1600px) {
+    width: 10rem;
+    margin-left: -2rem;
+  }
+
+  @media screen and (max-width: 1440px) {
+    display: none;
+  }
 `;
 
 export const HeaderLeftSide = styled.div`
@@ -38,6 +47,7 @@ export const HeaderLeftSide = styled.div`
   align-items: center;
   gap: 0.5rem;
   color: ${(props) => props.theme.white};
+  margin: 0 1rem;
 
   h3 {
     font-size: 1rem;
@@ -51,6 +61,7 @@ export const HeaderLeftSide = styled.div`
 
 export const NavContainer = styled.nav`
   display: flex;
+  margin: 0 1rem;
 
   ul {
     display: flex;

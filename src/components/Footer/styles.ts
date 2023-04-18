@@ -13,6 +13,7 @@ export const FooterHeader = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin: 0 1rem;
   }
 
   img {
@@ -37,6 +38,7 @@ export const FooterSocial = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin: 0 1rem;
 
   h1 {
     font-size: 1.5rem;

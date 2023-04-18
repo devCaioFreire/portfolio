@@ -10,6 +10,7 @@ export const HomeContainer = styled.div`
 
 export const HomeText = styled.div`
   max-width: 33rem;
+  margin: 0 1rem;
 
   span {
     color: ${(props) => props.theme.purple};
@@ -42,6 +43,7 @@ export const HomeText = styled.div`
 export const HomeImageContainer = styled.div`
   display: flex;
   flex-direction: column;
+  margin: 0 1rem;
 
   img {
     object-fit: cover;
@@ -63,6 +65,24 @@ export const HomeImageContainer = styled.div`
       height: 1rem;
       width: 1rem;
       background-color: ${(props) => props.theme.purple};
+    }
+  }
+
+  @media screen and (max-width: 1142px) {
+    img {
+      width: 30rem;
+    }
+  }
+
+  @media screen and (max-width: 1063px) {
+    img {
+      width: 25rem;
+    }
+  }
+
+  @media screen and (max-width: 980px) {
+    img {
+      width: 20rem;
     }
   }
 `;

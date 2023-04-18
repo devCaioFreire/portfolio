@@ -9,6 +9,7 @@ export const ProjectHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 1rem;
 
   span {
     color: ${(props) => props.theme.purple};
@@ -38,8 +39,8 @@ export const ProjectHeader = styled.header`
 export const ProjectsCards = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  margin-top: 3rem;
   gap: 1rem;
+  margin: 3rem 1rem;
 `;
 
 export const Project = styled.div`

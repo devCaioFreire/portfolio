@@ -4,12 +4,16 @@ export const AboutContainer = styled.div`
   max-width: 85rem;
   margin: 7rem auto;
 
-  h1 {
-    font-weight: 400;
-  }
+  header {
+    margin: 0 1rem;
 
-  span {
-    color: ${(props) => props.theme.purple};
+    h1 {
+      font-weight: 400;
+    }
+
+    span {
+      color: ${(props) => props.theme.purple};
+    }
   }
 
   div {
@@ -22,7 +26,7 @@ export const AboutTextContent = styled.div`
   flex-direction: column;
   gap: 2rem;
   max-width: 42.5rem;
-  margin-top: 3rem;
+  margin: 3rem 1rem;
   line-height: 1.6;
 `;
 
@@ -30,4 +34,36 @@ export const ImageContainer = styled.div`
   display: flex;
   margin-left: auto;
   max-width: 42.5rem;
+
+  @media screen and (max-width: 1400px) {
+    margin-left: 15rem;
+  }
+
+  @media screen and (max-width: 1300px) {
+    margin-left: 14rem;
+  }
+
+  @media screen and (max-width: 1290px) {
+    margin-left: 13rem;
+  }
+
+  @media screen and (max-width: 1270px) {
+    margin-left: 12rem;
+  }
+
+  @media screen and (max-width: 1250px) {
+    margin-left: 11rem;
+  }
+
+  @media screen and (max-width: 1230px) {
+    margin-left: 10rem;
+  }
+
+  @media screen and (max-width: 1210px) {
+    margin-left: 9rem;
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 8rem;
+  }
 `;

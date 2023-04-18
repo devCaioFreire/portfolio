@@ -5,6 +5,8 @@ export const ContactContainer = styled.div`
   margin: 0 auto;
 
   header {
+    margin: 0 1rem;
+
     h1 {
       font-weight: 400;
     }
@@ -17,7 +19,7 @@ export const ContactContainer = styled.div`
   > div {
     display: flex;
     justify-content: space-between;
-    margin-top: 3rem;
+    margin: 3rem 1rem;
   }
 `;
 
