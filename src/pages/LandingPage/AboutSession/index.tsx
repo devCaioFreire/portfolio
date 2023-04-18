@@ -24,8 +24,6 @@ export function AboutSession() {
             establish their presence online. I always strive to learn about the
             newest technologies and frameworks.
           </p>
-
-          <button>Ver mais {"->"}</button>
         </AboutTextContent>
 
         <ImageContainer>

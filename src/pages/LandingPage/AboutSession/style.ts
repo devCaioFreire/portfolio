@@ -24,22 +24,6 @@ export const AboutTextContent = styled.div`
   max-width: 42.5rem;
   margin-top: 3rem;
   line-height: 1.6;
-
-  button {
-    width: fit-content;
-    padding: 0.5rem 1.5rem;
-    border-radius: 4px;
-    background: transparent;
-    border: 1px solid ${(props) => props.theme.purple};
-    color: ${(props) => props.theme.white};
-    transition: all 0.2s;
-    cursor: pointer;
-
-    &:hover {
-      background: ${(props) => props.theme.purple};
-      color: ${(props) => props.theme.white};
-    }
-  }
 `;
 
 export const ImageContainer = styled.div`

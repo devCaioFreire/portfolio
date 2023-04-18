@@ -19,17 +19,17 @@ export const HomeText = styled.div`
     color: ${(props) => props.theme.gray};
     font-size: 1.2rem;
     margin-top: 0.5rem;
+    margin-bottom: 2rem;
   }
 
-  button {
+  a {
     border: 1px solid ${(props) => props.theme.purple};
     color: ${(props) => props.theme.white};
     background: transparent;
     padding: 0.5rem 1rem;
-    margin-top: 2rem;
     font-size: 1.1rem;
     border-radius: 4px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s;
     cursor: pointer;
 
     &:hover {

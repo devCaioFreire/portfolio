@@ -8,29 +8,9 @@ import {
   NavContainer,
 } from "./style";
 import { Link } from "react-router-dom";
-
-interface HeaderProps {
-  id: string;
-  event: React.MouseEvent<HTMLAnchorElement, MouseEvent>;
-}
+import { handleScroll } from "../../util/smoothScroll";
 
 export function Header() {
-  function handleScroll({ id, event }: HeaderProps) {
-    event?.preventDefault();
-
-    const element = document.getElementById(id);
-
-    if (element) {
-      let yOffset = -70;
-      if (id === "home") {
-        yOffset = -1000;
-      }
-      const y =
-        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-
-      window.scrollTo({ top: y, behavior: "smooth" });
-    }
-  }
   return (
     <>
       <AsideContainer>
