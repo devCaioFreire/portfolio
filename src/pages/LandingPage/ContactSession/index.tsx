@@ -3,9 +3,9 @@ import { HiMail } from "react-icons/hi";
 
 import { BoxContainer, ContactContainer, ContactTextContent } from "./style";
 
-export function Contact() {
+export function ContactSession() {
   return (
-    <ContactContainer>
+    <ContactContainer id="contact">
       <header>
         <h1>
           <span>#</span>contato

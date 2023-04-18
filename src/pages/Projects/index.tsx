@@ -1,71 +1,119 @@
 import {
-  ProjectsContainer,
+  HeaderMain,
+  ProjectContainer,
   ProjectHeader,
-  ProjectsCards,
-  Project,
-  ProjectInfo,
+  ProjectsCardsContent,
+  ProjectsSmallCardsContent,
 } from "./style";
 
 import projectImage1 from "../../assets/project1.jpg";
 import projectImage2 from "../../assets/project2.png";
-import projectImage3 from "../../assets/project3.png";
+import { ProjectCard, ProjectAppCard } from "./components";
 
 export function Projects() {
   return (
-    <ProjectsContainer>
+    <ProjectContainer>
+      <HeaderMain>
+        <h1>
+          <span>/</span>projects
+        </h1>
+        <p>Minha lista de projetos</p>
+      </HeaderMain>
+
       <ProjectHeader>
         <h1>
-          <span>#</span>projects
+          <span>#</span>complete-apps
         </h1>
-        <a href="#">
-          Ver mais <span>{"~~>"}</span>
-        </a>
       </ProjectHeader>
 
-      <ProjectsCards>
-        <Project>
-          <img src={projectImage1} width={"100%"} />
-          <p>TypeScript React.JS Styled-Components</p>
-          <ProjectInfo>
-            <h1>Nome do App</h1>
-            <p>Descrição da aplicação desenvolvida</p>
-            <div>
-              <a href="#">Produção {"<~>"}</a>
-              <a href="#">Repositório {">="}</a>
-            </div>
-          </ProjectInfo>
-        </Project>
+      <ProjectsCardsContent>
+        <ProjectAppCard
+          image={projectImage1}
+          title="Project 1"
+          description="Descrição da aplicação desenvolvida"
+          techs="TypeScript React.JS Styled-Components"
+          link="https://caiofreire.vercel.app"
+        />
+        <ProjectAppCard
+          image={projectImage2}
+          title="Project 2"
+          description="Descrição da aplicação desenvolvida"
+          techs="TypeScript React.JS Styled-Components"
+          link="https://caiofreire.vercel.app"
+        />
+        <ProjectAppCard
+          image={projectImage1}
+          title="Project 3"
+          description="Descrição da aplicação desenvolvida"
+          techs="TypeScript React.JS Styled-Components"
+          link="https://caiofreire.vercel.app"
+        />
+        <ProjectAppCard
+          image={projectImage2}
+          title="Project 4"
+          description="Descrição da aplicação desenvolvida"
+          techs="TypeScript React.JS Styled-Components"
+          link="https://caiofreire.vercel.app"
+        />
+        <ProjectAppCard
+          image={projectImage1}
+          title="Project 5"
+          description="Descrição da aplicação desenvolvida"
+          techs="TypeScript React.JS Styled-Components"
+          link="https://caiofreire.vercel.app"
+        />
+        <ProjectAppCard
+          image={projectImage2}
+          title="Project 6"
+          description="Descrição da aplicação desenvolvida"
+          techs="TypeScript React.JS Styled-Components"
+          link="https://caiofreire.vercel.app"
+        />
+      </ProjectsCardsContent>
 
-        <Project>
-          <img src={projectImage2} width={"100%"} />
-          <p>TypeScript React.JS Styled-Components</p>
-          <ProjectInfo>
-            <h1>Nome do App</h1>
-            <p>Descrição da aplicação desenvolvida</p>
-            <div>
-              <a href="#">Produção {"<~>"}</a>
-              <a href="#">Repositório {">="}</a>
-            </div>
-          </ProjectInfo>
-        </Project>
+      <ProjectHeader>
+        <h1>
+          <span>#</span>small-projects
+        </h1>
+      </ProjectHeader>
 
-        <Project>
-          <img src={projectImage3} width={"100%"} />
-          <p>TypeScript React.JS Styled-Components</p>
-          <ProjectInfo>
-            <h1>Nome do App</h1>
-            <p>Descrição da aplicação desenvolvida</p>
-            <div>
-              <a href="#" >
-                Produção {"<~>"}
-              </a>
-              <a href="#" target="_blank">
-                Repositório {">="}
-              </a>
-            </div>
-          </ProjectInfo>
-        </Project>
-      </ProjectsCards>
-    </ProjectsContainer>
+      <ProjectsSmallCardsContent>
+        <ProjectCard
+          techs="TS React Styled-Components"
+          title="Name App 1"
+          description="Description of the small project "
+          link="#"
+          linkName="GitHub"
+        />
+        <ProjectCard
+          techs="TS React Styled-Components"
+          title="Name App 1"
+          description="Description of the small project "
+          link="#"
+          linkName="GitHub"
+        />
+        <ProjectCard
+          techs="TS React Styled-Components"
+          title="Name App 1"
+          description="Description of the small project "
+          link="#"
+          linkName="GitHub"
+        />
+        <ProjectCard
+          techs="TS React Styled-Components"
+          title="Name App 1"
+          description="Description of the small project "
+          link="#"
+          linkName="GitHub"
+        />
+        <ProjectCard
+          techs="TS React Styled-Components"
+          title="Name App 1"
+          description="Description of the small project "
+          link="#"
+          linkName="GitHub"
+        />
+      </ProjectsSmallCardsContent>
+    </ProjectContainer>
   );
 }

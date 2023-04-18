@@ -1,9 +1,9 @@
 import { AboutContainer, AboutTextContent, ImageContainer } from "./style";
-import AboutImage from "../../assets/AboutImage.png";
+import AboutImage from "../../../assets/AboutImage.png";
 
-export function About() {
+export function AboutSession() {
   return (
-    <AboutContainer>
+    <AboutContainer id="about">
       <header>
         <h1>
           <span>#</span>sobre-mim
@@ -29,7 +29,7 @@ export function About() {
         </AboutTextContent>
 
         <ImageContainer>
-          <img src={AboutImage} draggable='false' />
+          <img src={AboutImage} draggable="false" />
         </ImageContainer>
       </div>
     </AboutContainer>

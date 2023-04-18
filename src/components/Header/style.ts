@@ -37,6 +37,7 @@ export const HeaderLeftSide = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  color: ${(props) => props.theme.white};
 
   h3 {
     font-size: 1rem;

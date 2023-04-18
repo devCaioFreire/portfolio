@@ -1,9 +1,9 @@
 import { HomeContainer, HomeImageContainer, HomeText } from "./style";
-import HomeImage from "../../assets/HomeImage.png";
+import HomeImage from "../../../assets/HomeImage.png";
 
-export function Home() {
+export function HomeSession() {
   return (
-    <HomeContainer>
+    <HomeContainer id="home">
       <HomeText>
         <h1>
           Olá, me chamo Caio Freire! <span>Sou desenvolvedor front-end </span>e{" "}

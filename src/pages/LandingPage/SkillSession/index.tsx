@@ -3,10 +3,10 @@ import {
   SkillImageContainer,
   SkillsContainer,
 } from "./style";
-import SkillsImage from "../../assets/SkillsImage.png";
-import { HardSkillsComponent } from "./components/HardSkillsComponent";
+import SkillsImage from "../../../assets/SkillsImage.png";
+import { HardSkillsComponent } from "./components";
 
-export function Skills() {
+export function SkillSession() {
   return (
     <SkillsContainer>
       <div>
