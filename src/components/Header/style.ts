@@ -166,6 +166,6 @@ export const NavContainer = styled.nav<NavMobileProps>`
   }
 
   @media screen and (max-width: 449px) {
-    width: ${(props) => (props.isOpen ? "30.5%" : "0")};
+    width: ${(props) => (props.isOpen ? "31%" : "0")};
   }
 `;
