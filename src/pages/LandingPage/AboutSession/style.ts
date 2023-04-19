@@ -16,8 +16,17 @@ export const AboutContainer = styled.div`
     }
   }
 
-  div {
+  > div {
     display: flex;
+
+    @media screen and (max-width: 730px) {
+      flex-direction: column;
+
+      img {
+        width: 15rem;
+        height: 20rem;
+      }
+    }
   }
 `;
 
@@ -28,6 +37,11 @@ export const AboutTextContent = styled.div`
   max-width: 42.5rem;
   margin: 3rem 1rem;
   line-height: 1.6;
+
+  @media screen and (max-width: 730px) {
+    width: 100%;
+    margin-right: 1rem;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -82,5 +96,9 @@ export const ImageContainer = styled.div`
       width: 18rem;
       height: 23rem;
     }
+  }
+
+  @media screen and (max-width: 730px) {
+    margin: 0 auto;
   }
 `;
