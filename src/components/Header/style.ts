@@ -95,7 +95,11 @@ export const NavContainer = styled.nav<NavMobileProps>`
 
   @media screen and (min-width: 840px) {
     div {
-      display: none;
+      display: flex;
+
+      svg {
+        display: none;
+      }
     }
 
     ul {
@@ -104,16 +108,12 @@ export const NavContainer = styled.nav<NavMobileProps>`
   }
 
   @media screen and (max-width: 839px) {
-    div {
-      display: block;
-    }
-
     transition: all 0.3s;
     flex-direction: column;
     position: fixed;
     top: 0;
     right: -1rem;
-    width: ${(props) => (props.isOpen ? "20%" : "0")};
+    width: ${(props) => (props.isOpen ? "18%" : "0")};
     height: 100%;
     background-color: ${({ theme }) => theme.gray};
     display: ${(props) => (props.isOpen ? "flex" : "inline-block")};
@@ -131,5 +131,49 @@ export const NavContainer = styled.nav<NavMobileProps>`
       gap: 2rem;
       flex-direction: column;
     }
+  }
+
+  @media screen and (max-width: 764px) {
+    width: ${(props) => (props.isOpen ? "19%" : "0")};
+  }
+
+  @media screen and (max-width: 724px) {
+    width: ${(props) => (props.isOpen ? "20%" : "0")};
+  }
+
+  @media screen and (max-width: 670px) {
+    width: ${(props) => (props.isOpen ? "22%" : "0")};
+  }
+
+  @media screen and (max-width: 608px) {
+    width: ${(props) => (props.isOpen ? "23%" : "0")};
+  }
+
+  @media screen and (max-width: 582px) {
+    width: ${(props) => (props.isOpen ? "24%" : "0")};
+  }
+
+  @media screen and (max-width: 557px) {
+    width: ${(props) => (props.isOpen ? "25.5%" : "0")};
+  }
+
+  @media screen and (max-width: 523px) {
+    width: ${(props) => (props.isOpen ? "26.5%" : "0")};
+  }
+
+  @media screen and (max-width: 502px) {
+    width: ${(props) => (props.isOpen ? "27.5%" : "0")};
+  }
+
+  @media screen and (max-width: 484px) {
+    width: ${(props) => (props.isOpen ? "28.5%" : "0")};
+  }
+
+  @media screen and (max-width: 466px) {
+    width: ${(props) => (props.isOpen ? "29.5%" : "0")};
+  }
+
+  @media screen and (max-width: 449px) {
+    width: ${(props) => (props.isOpen ? "30.5%" : "0")};
   }
 `;
