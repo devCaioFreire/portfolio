@@ -6,8 +6,7 @@ interface HardSkillProps {
 
 export const HardSkills = styled.div<HardSkillProps>`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(auto, 5fr));
-  max-width: 35rem;
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 5fr));
   border: 1px solid ${(props) => props.theme.gray};
   margin-top: 1rem;
   width: ${(props) => (props.width ? `${props.width}rem` : "auto")};
@@ -40,5 +39,19 @@ export const HardSkills = styled.div<HardSkillProps>`
     p {
       border-color: ${(props) => props.theme.purple};
     }
+  }
+
+  @media screen and (max-width: 732px) {
+    display: flex;
+    width: 100%;
+    margin-right: 5rem;
+  }
+
+  @media screen and (max-width: 650px) {
+    margin-right: 2rem;
+  }
+
+  @media screen and (max-width: 632px) {
+    margin-right: 1rem;
   }
 `;
