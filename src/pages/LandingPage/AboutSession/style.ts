@@ -37,6 +37,7 @@ export const ImageContainer = styled.div`
 
   @media screen and (max-width: 1400px) {
     margin-left: 15rem;
+    margin-right: 1rem;
   }
 
   @media screen and (max-width: 1300px) {
@@ -64,6 +65,22 @@ export const ImageContainer = styled.div`
   }
 
   @media screen and (max-width: 1200px) {
-    margin-left: 8rem;
+    margin-left: 5rem;
+  }
+
+  @media screen and (max-width: 1120px) {
+    img {
+      width: 20rem;
+      height: 25rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-left: 3rem;
+
+    img {
+      width: 18rem;
+      height: 23rem;
+    }
   }
 `;
