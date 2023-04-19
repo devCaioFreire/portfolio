@@ -1,9 +1,9 @@
+import { useState, useEffect } from "react";
 import { CaretDown } from "phosphor-react";
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import { handleScroll } from "../../util/smoothScroll";
 import Logo from "../../assets/frPurple.svg";
-import { useState } from "react";
 import { VscLayoutSidebarLeft } from "react-icons/vsc";
 import { TbAppWindowFilled } from "react-icons/tb";
 import { BiWindowClose } from "react-icons/bi";
@@ -16,6 +16,27 @@ import {
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 839) {
+        setMenuOpen(false);
+      } else {
+        setMenuOpen(true);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const handleToggleMenu = () => {
+    setMenuOpen((prevMenuOpen) => !prevMenuOpen);
+  };
 
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);

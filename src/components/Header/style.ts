@@ -94,16 +94,8 @@ export const NavContainer = styled.nav<NavMobileProps>`
   }
 
   @media screen and (min-width: 840px) {
-    div {
-      display: flex;
-
-      svg {
-        display: none;
-      }
-    }
-
-    ul {
-      width: 100%;
+    svg {
+      display: none;
     }
   }
 
@@ -116,7 +108,7 @@ export const NavContainer = styled.nav<NavMobileProps>`
     width: ${(props) => (props.isOpen ? "18%" : "0")};
     height: 100%;
     background-color: ${({ theme }) => theme.gray};
-    display: ${(props) => (props.isOpen ? "flex" : "inline-block")};
+    display: flex;
     z-index: 9999;
 
     svg {
