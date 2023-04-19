@@ -59,7 +59,11 @@ export const HeaderLeftSide = styled.div`
   }
 `;
 
-export const NavContainer = styled.nav`
+interface NavMobileProps {
+  isOpen: boolean;
+}
+
+export const NavContainer = styled.nav<NavMobileProps>`
   display: flex;
   margin: 0 1rem;
 
@@ -86,6 +90,46 @@ export const NavContainer = styled.nav`
 
     svg {
       vertical-align: middle;
+    }
+  }
+
+  @media screen and (min-width: 840px) {
+    div {
+      display: none;
+    }
+
+    ul {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 839px) {
+    div {
+      display: block;
+    }
+
+    transition: all 0.3s;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -1rem;
+    width: ${(props) => (props.isOpen ? "20%" : "0")};
+    height: 100%;
+    background-color: ${({ theme }) => theme.gray};
+    display: ${(props) => (props.isOpen ? "flex" : "inline-block")};
+    z-index: 9999;
+
+    svg {
+      margin-top: 2rem;
+      float: right;
+      margin-right: 1rem;
+    }
+
+    ul {
+      display: flex;
+      margin: 5rem 1rem;
+      gap: 2rem;
+      flex-direction: column;
     }
   }
 `;
