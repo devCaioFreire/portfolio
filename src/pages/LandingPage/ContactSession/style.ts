@@ -20,6 +20,15 @@ export const ContactContainer = styled.div`
     display: flex;
     justify-content: space-between;
     margin: 3rem 1rem;
+
+    @media screen and (max-width: 858px) {
+      gap: 1rem;
+    }
+
+    @media screen and (max-width: 636px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 `;
 
@@ -28,6 +37,42 @@ export const ContactTextContent = styled.div`
   flex-direction: column;
   max-width: 42.5rem;
   line-height: 1.6;
+
+  @media screen and (max-width: 1060px) {
+    max-width: 42rem;
+  }
+
+  @media screen and (max-width: 1050px) {
+    max-width: 38rem;
+  }
+
+  @media screen and (max-width: 990px) {
+    max-width: 36rem;
+  }
+
+  @media screen and (max-width: 957px) {
+    max-width: 33rem;
+  }
+
+  @media screen and (max-width: 907px) {
+    max-width: 30rem;
+  }
+
+  @media screen and (max-width: 858px) {
+    max-width: 50%;
+  }
+
+  @media screen and (max-width: 756px) {
+    max-width: 45%;
+  }
+
+  @media screen and (max-width: 724px) {
+    max-width: 40%;
+  }
+
+  @media screen and (max-width: 636px) {
+    max-width: 100%;
+  }
 `;
 
 export const BoxContainer = styled.div`
@@ -65,4 +110,22 @@ export const BoxContainer = styled.div`
   &:hover {
     border: 1px solid ${(props) => props.theme.purple};
   }
+
+  @media screen and (max-width: 858px) {
+    width: fit-content;
+    max-width: 50%;
+  }
+
+  @media screen and (max-width: 756px) {
+    max-width: 55%;
+  }
+
+  @media screen and (max-width: 724px) {
+    max-width: 60%;
+  }
+
+  
+  @media screen and (max-width: 636px) {
+    max-width: 100%;
+    }
 `;
