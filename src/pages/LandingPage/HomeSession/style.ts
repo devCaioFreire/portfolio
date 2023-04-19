@@ -6,6 +6,11 @@ export const HomeContainer = styled.div`
   justify-content: space-between;
   max-width: 85rem;
   margin: 2rem auto;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
 `;
 
 export const HomeText = styled.div`
@@ -57,8 +62,6 @@ export const HomeImageContainer = styled.div`
     margin-left: 2.1rem;
     margin-right: 2.5rem;
     padding: 0.5rem 1rem;
-    /* border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px; */
 
     &:before {
       content: "";
@@ -68,7 +71,7 @@ export const HomeImageContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 1142px) {
+  @media screen and (max-width: 1200px) {
     img {
       width: 30rem;
     }
@@ -78,11 +81,43 @@ export const HomeImageContainer = styled.div`
     img {
       width: 25rem;
     }
+
+    p {
+      margin-left: 1.5rem;
+      margin-right: 2rem;
+    }
   }
 
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 983px) {
     img {
       width: 20rem;
+    }
+
+    p {
+      margin-left: 1.3rem;
+      margin-right: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 903px) {
+    img {
+      width: 15rem;
+    }
+
+    p {
+      font-size: 0.875rem;
+    }
+  }
+
+  @media screen and (max-width: 803px) {
+    img {
+      width: 13rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    img {
+      width: 17rem;
     }
   }
 `;
