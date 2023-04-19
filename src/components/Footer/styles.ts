@@ -32,6 +32,20 @@ export const FooterHeader = styled.div`
   p {
     margin-top: 2rem;
   }
+
+  @media screen and (max-width: 562px) {
+    h1 {
+      font-size: 1rem;
+    }
+    font-size: 0.875rem;
+  }
+
+  @media screen and (max-width: 491px) {
+    h1 {
+      font-size: 0.875rem;
+    }
+    font-size: 0.8rem;
+  }
 `;
 
 export const FooterSocial = styled.div`
@@ -56,5 +70,18 @@ export const FooterSocial = styled.div`
         color: ${(props) => props.theme.white};
       }
     }
+  }
+
+  @media screen and (max-width: 562px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media screen and (max-width: 491px) {
+    h1 {
+      font-size: 1rem;
+    }
+    font-size: 0.8rem;
   }
 `;

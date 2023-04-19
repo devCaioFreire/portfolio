@@ -124,8 +124,31 @@ export const BoxContainer = styled.div`
     max-width: 60%;
   }
 
-  
   @media screen and (max-width: 636px) {
     max-width: 100%;
+  }
+
+  @media screen and (max-width: 377px) {
+    a {
+      font-size: 0.875rem;
     }
+  }
+
+  @media screen and (max-width: 341px) {
+    svg {
+      width: 1.2rem;
+    }
+  }
+
+  @media screen and (max-width: 341px) {
+    svg {
+      width: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 333px) {
+    a {
+      font-size: 0.8rem;
+    }
+  }
 `;
