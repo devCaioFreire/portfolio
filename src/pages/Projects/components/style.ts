@@ -18,6 +18,10 @@ export const Project = styled.div`
     padding: 0.5rem 1rem;
     color: ${(props) => props.theme.gray};
   }
+
+  @media screen and (max-width: 350px) {
+    width: 95%;
+  }
 `;
 
 export const ProjectInfo = styled.div`
@@ -100,5 +104,9 @@ export const ProjectSmallApp = styled.div`
     span {
       border-bottom: 2px solid ${(props) => props.theme.purple};
     }
+  }
+
+  @media screen and (max-width: 350px) {
+    width: 95%;
   }
 `;
