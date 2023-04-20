@@ -34,6 +34,16 @@ export const ProjectHeader = styled.header`
       }
     }
   }
+
+  @media screen and (max-width: 375px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    a {
+      font-size: 0.875rem;
+    }
+  }
 `;
 
 export const ProjectsCards = styled.section`
@@ -41,6 +51,10 @@ export const ProjectsCards = styled.section`
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1rem;
   margin: 3rem 1rem;
+
+  @media screen and (max-width: 375px) {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
 `;
 
 export const Project = styled.div`
@@ -52,6 +66,12 @@ export const Project = styled.div`
   p {
     padding: 0.5rem 1rem;
     color: ${(props) => props.theme.gray};
+  }
+
+  @media screen and (max-width: 375px) {
+    p {
+      font-size: 0.875rem;
+    }
   }
 `;
 
@@ -83,6 +103,12 @@ export const ProjectInfo = styled.div`
 
     &:hover {
       color: ${(props) => props.theme.white};
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    a {
+      font-size: 0.875rem;
     }
   }
 `;

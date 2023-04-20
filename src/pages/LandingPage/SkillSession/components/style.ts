@@ -54,4 +54,12 @@ export const HardSkills = styled.div<HardSkillProps>`
   @media screen and (max-width: 632px) {
     margin-right: 1rem;
   }
+
+  @media screen and (max-width: 460px) {
+    width: fit-content;
+
+    &:nth-child(1) {
+      margin-top: 1rem;
+    }
+  }
 `;

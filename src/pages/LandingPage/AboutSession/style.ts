@@ -42,6 +42,13 @@ export const AboutTextContent = styled.div`
     width: 100%;
     margin-right: 1rem;
   }
+
+  @media screen and (max-width: 700px) {
+    p {
+      font-size: 0.875rem;
+      width: 90%;
+    }
+  }
 `;
 
 export const ImageContainer = styled.div`

@@ -20,6 +20,7 @@ export const QuoteMain = styled.div`
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   transition: all 0.4s;
+  margin: 0 1rem;
 
   h1 {
     font-size: 1.5rem;
@@ -60,6 +61,7 @@ export const QuoteAuthor = styled.div`
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   transition: all 0.4s;
+  margin: 0 1rem;
 
   p {
     font-size: 1.25rem;

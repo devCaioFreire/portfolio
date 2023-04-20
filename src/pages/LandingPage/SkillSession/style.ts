@@ -75,6 +75,10 @@ export const HardSkillsContent = styled.div`
   @media screen and (max-width: 732px) {
     display: flex;
     gap: 2rem;
+
+    div {
+      width: fit-content;
+    }
   }
 
   @media screen and (max-width: 690px) {
@@ -90,5 +94,12 @@ export const HardSkillsContent = styled.div`
 
   @media screen and (max-width: 650px) {
     margin-right: 1rem;
+  }
+
+  @media screen and (max-width: 460px) {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    width: fit-content;
   }
 `;
